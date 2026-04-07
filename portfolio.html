@@ -1,0 +1,436 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Portfolio</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=DM+Sans:wght@300;400;500&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="portfolio.css" />
+    <!-- <style>
+  
+</style> -->
+  </head>
+  <body>
+    <!-- NAV -->
+    <nav class="portfolio-nav">
+      <div class="logo">Portfolio</div>
+      <ul>
+        <li><a href="#hero">Home</a></li>
+        <li><a href="#experience">Experience</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+      <button class="hamburger" onclick="openMobile()" aria-label="Open menu">
+        <span></span><span></span><span></span>
+      </button>
+    </nav>
+
+    <!-- MOBILE MENU -->
+    <div class="mobile-menu" id="mobileMenu">
+      <button class="mobile-close" onclick="closeMobile()">&#x2715;</button>
+      <a href="#hero" onclick="closeMobile()">Home</a>
+      <a href="#experience" onclick="closeMobile()">Experience</a>
+      <a href="#projects" onclick="closeMobile()">Projects</a>
+      <a href="#contact" onclick="closeMobile()">Contact</a>
+    </div>
+
+    <!-- ════════════════════════════════ SECTION 1: HERO ════════════════════════════════ -->
+    <section id="hero">
+      <div class="container">
+        <div class="hero-inner">
+          <div class="row align-items-center g-5">
+            <div class="col-lg-7 order-2 order-lg-1">
+              <p class="hero-greeting">Hello, I'm</p>
+              <h1 class="hero-name">Teo Zi Ning</h1>
+              <!-- <h1 class="hero-name">Your <span>Full Name</span><br>Here</h1> -->
+              <p class="hero-tagline">
+                A self-motivated IT professional with nearly one year of
+                hands-on experience in software development. I hold a Bachelor’s
+                Degree in Computer Science and have gained practical experience
+                working on real-world projects. I am eager to continue growing
+                my technical skills and contribute effectively in a dynamic team
+                environment.
+              </p>
+
+              <div class="info-cards">
+                <div class="info-card">
+                  <i class="bi bi-calendar3"></i>
+                  <div>
+                    <span class="label">Age</span>
+                    <span class="val">24 years old</span>
+                  </div>
+                </div>
+                <div class="info-card">
+                  <i class="bi bi-geo-alt"></i>
+                  <div>
+                    <span class="label">From</span>
+                    <span class="val">Johor Bahru, Johor</span>
+                  </div>
+                </div>
+                <div class="info-card">
+                  <i class="bi bi-mortarboard"></i>
+                  <div>
+                    <span class="label">CGPA</span>
+                    <span class="val">3.64</span>
+                  </div>
+                </div>
+                <div class="info-card">
+                  <i class="bi bi-phone"></i>
+                  <div>
+                    <span class="label">Phone</span>
+                    <span class="val">010-8238929</span>
+                  </div>
+                </div>
+                <div class="info-card">
+                  <i class="bi bi-envelope"></i>
+                  <div>
+                    <span class="label">Email</span>
+                    <span class="val">ziningteo0502@gmail.com</span>
+                  </div>
+                </div>
+              </div>
+
+              <a href="#projects" class="hero-cta">
+                View My Work <i class="bi bi-arrow-down-short"></i>
+              </a>
+            </div>
+
+            <!-- Photo Side -->
+            <div
+              class="col-lg-5 order-1 order-lg-2 d-flex justify-content-center"
+            >
+              <div class="hero-photo-wrap">
+                <div class="hero-photo-placeholder">
+                  <img src="/images/self.jpeg" class="hero-photo" alt="Profile Photo" />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ════════════════════════════════ SECTION 2: EXPERIENCE ════════════════════════════════ -->
+    <section id="experience">
+      <div class="container">
+        <p class="section-label">Career Path</p>
+        <h2 class="section-title">Work Experience</h2>
+        <div class="divider"></div>
+
+        <div class="row">
+          <div class="col-12">
+            <div class="timeline">
+              <div class="timeline-item" data-animate>
+                <div class="timeline-dot"></div>
+                <div class="timeline-card">
+                  <span class="timeline-period">Mar 2025 – Dec 2025</span>
+                  <p class="timeline-company">Autobahn Rent A Car Pte Ltd</p>
+                  <p class="timeline-role">Software Engineer</p>
+                  <ul class="timeline-duties">
+                    <li>
+                      Developed modules and features for the company's admin
+                      portal using Angular and Laravel (PHP).
+                    </li>
+                    <li>
+                      Built the company's corporate website, ensuring good
+                      performance and usability.
+                    </li>
+                    <li>
+                      Involved in mobile application development using React
+                      Native / Flutter.
+                    </li>
+                    <li>
+                      Collaborated with the development team using Git for
+                      version control.
+                    </li>
+                    <li>
+                      Performed manual functional testing on developed features
+                      before deployment to ensure core functionalities worked as
+                      expected.
+                    </li>
+                    <li>
+                      Identified and fixed bugs discovered during self-testing
+                      and peer testing.
+                    </li>
+                  </ul>
+                  <div class="tech-tags">
+                    <span class="tech-tag">Angular</span>
+                    <span class="tech-tag">Laravel (PHP)</span>
+                    <span class="tech-tag">React Native</span>
+                    <span class="tech-tag">Flutter</span>
+                    <span class="tech-tag">Git</span>
+                  </div>
+                </div>
+              </div>
+
+              <div class="timeline-item" data-animate>
+                <div class="timeline-dot"></div>
+                <div class="timeline-card">
+                  <span class="timeline-period">Oct 2023 – Jan 2024</span>
+                  <p class="timeline-company">Axel Logic Sdn Bhd</p>
+                  <p class="timeline-role">Software Developer Intern</p>
+                  <ul class="timeline-duties">
+                    <li>
+                      Assisted in upgrading the system from .NET 5 to .NET 7.
+                    </li>
+                    <li>
+                      Debugged and tested the new system version after
+                      migration.
+                    </li>
+                    <li>
+                      Gained hands-on experience with version control (GitHub)
+                      to track changes.
+                    </li>
+                    <li>
+                      Developed features and maintained the application using C#
+                      and ASP.NET.
+                    </li>
+                    <li>
+                      Conducted basic manual testing to verify system
+                      functionality after the upgrade.
+                    </li>
+                    <li>
+                      Re-tested features after bug fixes to ensure issues were
+                      resolved.
+                    </li>
+                  </ul>
+                  <div class="tech-tags">
+                    <span class="tech-tag">C#</span>
+                    <span class="tech-tag">ASP.NET</span>
+                    <span class="tech-tag">.NET 7</span>
+                    <span class="tech-tag">GitHub</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ════════════════════════════════ SECTION 3: PROJECTS ════════════════════════════════ -->
+    <section id="projects">
+      <div class="container">
+        <p class="section-label">What I've Built</p>
+        <h2 class="section-title">Projects</h2>
+        <div class="divider"></div>
+
+        <!-- FYP Project -->
+        <div class="fyp-card" data-animate-fade>
+          <div class="fyp-header">
+            <div>
+              <span class="fyp-badge">Final Year Project</span>
+              <p class="fyp-title">Batik Creator Application</p>
+            </div>
+          </div>
+
+          <div class="fyp-body open" id="fypBody">
+            <p class="fyp-desc">
+              This Final Year Project develops a
+              <strong>Batik Creator mobile application</strong> that
+              <strong>integrates generative AI</strong> to enhance digital
+              fashion design. The system allows users to
+              <strong>randomly generate batik patterns</strong>,
+              <strong>customize the designs by editing colors or shapes</strong
+              >, and
+              <strong
+                >apply the batik pattern onto different clothing fabrics</strong
+              >
+              through a batik cloth transfer feature. Users can then
+              <strong
+                >visualize how the selected clothing would look when worn on a
+                model</strong
+              >
+              using a GAN-based virtual try-on model (VITON-HD). By combining
+              batik pattern generation, customization, and virtual try-on, the
+              application provides an interactive platform for exploring and
+              designing personalized batik clothing digitally.
+            </p>
+
+            <!-- Scrollable image strip -->
+            <p
+              style="
+                font-size: 0.82rem;
+                font-weight: 500;
+                text-transform: uppercase;
+                letter-spacing: 0.1em;
+                color: var(--accent);
+                margin-bottom: 0.75rem;
+              "
+            >
+              Screenshots
+            </p>
+            <div class="img-scroll-track">
+              <!-- REPLACE each .img-slide with: <div class="img-slide"><img src="screenshot1.png" alt="..."></div> -->
+              <div class="img-slide">
+                <img src="/images/fyp1.jpeg" alt="FYP Main Menu" />
+              </div>
+              <div class="img-slide">
+                <img src="/images/fyp2.jpeg" alt="FYP Batik Generation" />
+              </div>
+              <div class="img-slide">
+                <img src="/images/fyp3.jpeg" alt="FYP Virtual Try On" />
+              </div>
+              <div class="img-slide">
+                <img src="/images/fyp4.jpeg" alt="FYP Batik Customization" />
+              </div>
+              <div class="img-slide">
+                <img src="/images/fyp5.jpeg" alt="FYP Batik Print On Cloth" />
+              </div>
+            </div>
+            <p class="scroll-hint">
+              <i class="bi bi-arrow-left-right"></i> Scroll to see more
+            </p>
+
+            <div class="tech-tags mt-3">
+              <span class="tech-tag">Generative AI</span>
+              <span class="tech-tag">Image Processing</span>
+              <span class="tech-tag">Android Studio</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Other Two Projects -->
+        <div class="row g-4">
+          <!-- Project 2 -->
+          <div class="col-md-6">
+            <div class="proj-card" data-animate-fade>
+              <div class="proj-img-wrap">
+                <img src="/images/yolo.jpeg" alt="Project 2" />
+              </div>
+              <div class="proj-body">
+                <p class="proj-num">Project 02</p>
+                <h3 class="proj-name">Visitor Tracking Analysis System</h3>
+                <p class="proj-desc">
+                  A <strong>computer vision–based system</strong> that detects
+                  and counts café visitors using <strong>YOLOv5</strong>. The
+                  system processes video input to identify people and
+                  <strong>records the visitor count</strong> automatically. The
+                  data is
+                  <strong
+                    >sent to a cloud server and stored in a database</strong
+                  >, where it is <strong>visualized through graphs</strong> on a
+                  web interface for real-time monitoring and analysis. This
+                  helps café owners understand customer traffic patterns and
+                  optimize staffing and operations.
+                </p>
+                <div class="tech-tags">
+                  <span class="tech-tag">YOLOv5</span>
+                  <span class="tech-tag">Python</span>
+                  <span class="tech-tag">AWS</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Project 3 -->
+          <div class="col-md-6">
+            <div class="proj-card" data-animate-fade>
+              <div class="proj-img-wrap">
+                <img src="/images/kidsmath.jpeg" alt="Project 3" />
+              </div>
+              <div class="proj-body">
+                <p class="proj-num">Project 03</p>
+                <h3 class="proj-name">Kids Math Learning Application</h3>
+                <p class="proj-desc">
+                  A <strong>mobile math learning application</strong> for
+                  kindergarten students that helps them practice number concepts
+                  through interactive mini-games. The app includes modules for
+                  <strong
+                    >comparing numbers, ordering numbers, and composing numbers,
+                    with randomly generated questions</strong
+                  >
+                  and instant answer feedback. Developed using
+                  <strong>Android Studio (Java)</strong> with a child-friendly
+                  UI design to make learning mathematics more engaging and
+                  accessible. 📱
+                </p>
+                <div class="tech-tags">
+                  <span class="tech-tag">Java</span>
+                  <span class="tech-tag">Android Studio</span>
+                  <span class="tech-tag">XML</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ════════════════════════════════ FOOTER / CONTACT ════════════════════════════════ -->
+    <footer id="contact">
+      <div class="container">
+        <p
+          style="
+            font-family: &quot;Playfair Display&quot;, serif;
+            font-size: 1.6rem;
+            font-weight: 700;
+            color: var(--cream);
+            margin-bottom: 0.5rem;
+          "
+        >
+          Let's Work Together
+        </p>
+        <p style="color: var(--warm); margin-bottom: 1rem; font-size: 0.9rem">
+          Open to full-time roles, freelance projects, and collaborations.
+        </p>
+        <p style="margin-bottom: 1.5rem">
+          <a href="mailto:ziningteo0502@gmail.com">
+            <i class="bi bi-envelope-fill" style="color: var(--sand)"></i>
+            ziningteo0502@gmail.com
+          </a>
+          &nbsp;&nbsp;|&nbsp;&nbsp;
+          <a href="tel:+60108238929">
+            <i class="bi bi-phone-fill" style="color: var(--sand)"></i>
+            +60 10-823 8929
+          </a>
+        </p>
+        <p style="color: var(--mid); font-size: 0.8rem">
+          © 2025 Teo Zi Ning · Portfolio 🪅
+        </p>
+      </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+      /* Mobile menu */
+      function openMobile() {
+        document.getElementById("mobileMenu").classList.add("open");
+        document.body.style.overflow = "hidden";
+      }
+      function closeMobile() {
+        document.getElementById("mobileMenu").classList.remove("open");
+        document.body.style.overflow = "";
+      }
+
+      /* Scroll-reveal — triggers every time element enters viewport */
+      const io = new IntersectionObserver(
+        (entries) => {
+          entries.forEach((e) => {
+            if (e.isIntersecting) {
+              e.target.classList.add("visible");
+            } else {
+              e.target.classList.remove("visible");
+            }
+          });
+        },
+        { threshold: 0.12 },
+      );
+
+      document
+        .querySelectorAll("[data-animate], [data-animate-fade]")
+        .forEach((el) => io.observe(el));
+    </script>
+  </body>
+</html>
