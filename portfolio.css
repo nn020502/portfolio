@@ -30,7 +30,7 @@ h1,
 h2,
 h3,
 h4 {
-  font-family: "Playfair Display", serif;
+  font-family: "DM Sans", sans-serif;
 }
 
 /* ─── NAVBAR ─── */
@@ -49,7 +49,7 @@ nav.portfolio-nav {
   justify-content: space-between;
 }
 nav.portfolio-nav .logo {
-  font-family: "Playfair Display", serif;
+  font-family: "DM Sans", sans-serif;
   font-size: 1.25rem;
   font-weight: 700;
   color: var(--accent);
@@ -108,7 +108,7 @@ nav.portfolio-nav ul a:hover {
   display: flex;
 }
 .mobile-menu a {
-  font-family: "Playfair Display", serif;
+  font-family: "DM Sans", sans-serif;
   font-size: 2rem;
   text-decoration: none;
   color: var(--dark);
@@ -414,7 +414,7 @@ section {
   border: 1px solid var(--warm);
 }
 .timeline-company {
-  font-family: "Playfair Display", serif;
+  font-family: "DM Sans", sans-serif;
   font-size: 1.3rem;
   font-weight: 700;
   color: var(--dark);
@@ -517,7 +517,7 @@ section {
   margin-bottom: 0.5rem;
 }
 .fyp-title {
-  font-family: "Playfair Display", serif;
+  font-family: "DM Sans", sans-serif;
   font-size: 1.4rem;
   font-weight: 700;
   color: var(--dark);
@@ -693,7 +693,7 @@ section {
   margin-bottom: 0.4rem;
 }
 .proj-name {
-  font-family: "Playfair Display", serif;
+  font-family: "DM Sans", sans-serif;
   font-size: 1.2rem;
   font-weight: 700;
   color: var(--dark);
