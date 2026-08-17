@@ -32,7 +32,7 @@
         <li><a href="#projects">Projects</a></li>
         <li><a href="#contact">Contact</a></li>
       </ul>
-      <button class="hamburger" onclick="openMobile()" aria-label="Open menu">
+      <button class="hamburger" onclick="toggleMobile()" aria-label="Open menu">
         <span></span><span></span><span></span>
       </button>
     </nav>
@@ -42,6 +42,7 @@
       <button class="mobile-close" onclick="closeMobile()">&#x2715;</button>
       <a href="#hero" onclick="closeMobile()">Home</a>
       <a href="#experience" onclick="closeMobile()">Experience</a>
+      <a href="#contributions" onclick="closeMobile()">Contributions</a>
       <a href="#projects" onclick="closeMobile()">Projects</a>
       <a href="#contact" onclick="closeMobile()">Contact</a>
     </div>
@@ -265,10 +266,7 @@
                 />
               </div>
               <div class="contrib-img-slide">
-                <img
-                  src="images/create.jpg"
-                  alt="Admin Portal Screenshot 2"
-                />
+                <img src="images/create.jpg" alt="Admin Portal Screenshot 2" />
               </div>
             </div>
             <!-- 可选：小圆点指示器 -->
@@ -573,6 +571,14 @@
       function closeMobile() {
         document.getElementById("mobileMenu").classList.remove("open");
         document.body.style.overflow = "";
+      }
+      function toggleMobile() {
+        const menu = document.getElementById("mobileMenu");
+        if (menu.classList.contains("open")) {
+          closeMobile();
+        } else {
+          openMobile();
+        }
       }
 
       /* Scroll-reveal — triggers every time element enters viewport */
