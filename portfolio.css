@@ -6,6 +6,23 @@
   --dark: #2c2620;
   --mid: #6b5b4e;
   --accent: #a07850;
+  --nav-inset: 0.75rem;
+}
+
+@media (min-width: 576px) {
+  :root { --nav-inset: calc((100% - 516px) / 2); }
+}
+@media (min-width: 768px) {
+  :root { --nav-inset: calc((100% - 696px) / 2); }
+}
+@media (min-width: 992px) {
+  :root { --nav-inset: calc((100% - 936px) / 2); }
+}
+@media (min-width: 1200px) {
+  :root { --nav-inset: calc((100% - 1116px) / 2); }
+}
+@media (min-width: 1400px) {
+  :root { --nav-inset: calc((100% - 1296px) / 2); }
 }
 
 * {
@@ -42,11 +59,31 @@ nav.portfolio-nav {
   z-index: 999;
   background: rgba(249, 248, 246, 0.88);
   backdrop-filter: blur(12px);
+  border: 1px solid transparent;
   border-bottom: 1px solid var(--warm);
+  border-radius: 0;
   padding: 0.9rem 2rem;
   display: flex;
   align-items: center;
   justify-content: space-between;
+  transition:
+    top 0.35s ease,
+    left 0.35s ease,
+    right 0.35s ease,
+    border-radius 0.35s ease,
+    background 0.35s ease,
+    box-shadow 0.35s ease,
+    border-color 0.35s ease;
+}
+/* Floating box state */
+nav.portfolio-nav.scrolled {
+  top: 14px;
+  left: var(--nav-inset);
+  right: var(--nav-inset);
+  border-radius: 18px;
+  background: rgba(255, 255, 255, 0.95);
+  border: 1px solid var(--warm);
+  box-shadow: 0 8px 30px rgba(44, 38, 32, 0.06);
 }
 nav.portfolio-nav .logo {
   font-family: "DM Sans", sans-serif;

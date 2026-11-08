@@ -576,6 +576,14 @@
         }
       }
 
+      /* Floating navbar on scroll */
+      const nav = document.querySelector(".portfolio-nav");
+      function handleNavScroll() {
+        nav.classList.toggle("scrolled", window.scrollY > 40);
+      }
+      window.addEventListener("scroll", handleNavScroll, { passive: true });
+      handleNavScroll(); // set correct state on page load
+
       /* Scroll-reveal — triggers every time element enters viewport */
       const io = new IntersectionObserver(
         (entries) => {
